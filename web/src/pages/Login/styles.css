@@ -1,0 +1,173 @@
+    #login-content {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #form-container{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    #form-container h2 {
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    #input-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    #input-container div {
+        height: 6.4rem;
+        display: flex;
+        align-items: center;
+        background: var(--color-input-background);
+        border: solid 0.1rem var(--color-line-in-white);
+    }
+
+    #input-container :first-child {
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+    }
+   
+    #input-container :last-child {
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+    }
+
+    #input-container div input {
+        display: flex;
+        flex: 1;
+        background-color: transparent;
+        outline: 0;
+        border: none;
+        padding-left: 1.6rem;
+    }
+
+    #input-container div:focus-within:before {
+        height:40px;
+        width: 2px;
+        content: '';
+        background: var(--color-primary-light);
+    }
+
+    #input-container div img {
+        height: 3.2rem;
+        width: 3.2rem;
+        margin-right: 1.6rem;
+        cursor: pointer;
+
+    }
+
+    #forgetPassword-remember-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    #forgetPassword-remember-container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #forgetPassword-remember-container div {
+        font-size: 1.2rem;
+    }
+
+    #forgetPassword-remember-container div span {
+        height: 2.4rem;
+        width: 2.4rem;
+        background: var(--color-input-background);
+        border: solid 0.1rem var(--color-line-in-white);
+        margin-right: 0.8rem;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    #forgetPassword-remember-container div span#selected {
+        height: 2.4rem;
+        width: 2.4rem;
+        background-color: var(--color-secundary);
+        margin-right: 0.8rem;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        -webkit-user-drag: none;
+    }
+
+    #forgetPassword-remember-container a {
+        text-decoration: none;
+        color: var(--color-text-base);
+        font-size: 1.2rem;
+    }
+
+    #form-container button {
+        border: none;
+        height: 5.6rem;
+        width: 100%;
+        background: var(--color-secundary);
+        border-radius: 0.8rem;
+        color: var(--color-button-text);
+        font-size: 2rem;
+        font-family: Archivo;
+    }
+
+    #creatAccount-free-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1.6rem;
+    }
+
+    #creatAccount-free-container a {
+        font-family: Poppins;
+        font-weight: bold;
+        color: var(--color-primary);
+    }
+
+    @media (min-width: 700px) {
+
+        #form-container {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+        }
+
+        #forgetPassword-remember-container div {
+            font-size: 1.4rem;
+        }
+
+        #forgetPassword-remember-container a {
+            font-size: 1.4rem;
+        }
+
+        #form-container h2 {
+            align-self: flex-start;
+        }
+    }
+    
+
+    @media (min-width: 1024px) {
+        #form-container {
+            width: 50%;
+        }
+        #creatAccount-free-container {
+            margin-top: 8rem;
+        }
+     }

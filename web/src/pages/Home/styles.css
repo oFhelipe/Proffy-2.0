@@ -1,0 +1,218 @@
+#page-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+#page-landing-logo-container {
+    margin-bottom: 3.6rem;
+}
+
+.logo-container img {
+    height: 10rem;
+}
+
+.hero-image {
+    width: 100%;
+    display: none;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem 0;
+    flex-direction: column;
+}
+
+.buttons-container a {
+    width: 30rem;
+    height: 10.4rem;
+    border-radius: 0.8rem;
+    font:700 2.0rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-button-text);
+    transition: background-color 0.2s;
+    margin-top: 1.6rem;
+}
+
+.buttons-container a:first-child {
+    margin-right: 1.6rem;
+}
+
+.buttons-container a img {
+    width: 4rem;
+    margin-right: 2.4rem;
+}
+
+.buttons-container a.study {
+    background: var(--color-primary-lighter);
+}
+
+.buttons-container a.give-classes {
+    background: var(--color-secundary);
+}
+.buttons-container a.study:hover {
+    background: var(--color-primary-light);
+}
+
+.buttons-container a.give-classes:hover {
+    background: var(--color-secundary-dark);
+}
+
+
+.total-connections {
+    font-size:  1.4rem;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right:1.6rem;
+}
+
+
+.bottom-container {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    flex: 1;
+}
+
+
+
+.bemvindo-text {
+    font-family: Poppins;
+    color: var(--color-text-base);
+    font-weight: 400;
+}
+
+.bemvindo-text strong {
+    font-weight: bold;
+}
+
+.profile-exit-bar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.6rem;
+}
+
+.profile-avatar-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-text-in-primary);
+}
+
+.profile-avatar-text img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    margin-left: 3.2rem;
+    margin-right: 1.6rem;
+}
+
+.profile-exit-bar button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.8rem;
+    background: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-right: 3.2rem;
+    transition: background-color 0.2s;
+}
+
+.profile-exit-bar button:hover {
+    background: var(--color-primary-darker);
+}
+
+
+@media (min-width: 1100px) {
+    #page-landing-logo-container {
+        max-width: 1100px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'logo hero';
+        margin-bottom: 3.6rem;
+    }
+
+    .hero-image {
+        display: block;
+    }
+
+    .logo-container img {
+        display: block;
+    }
+
+    .logo-container {
+        grid-area: logo;
+        align-self: center;
+        margin: 0;
+        text-align: left;
+    }
+    .logo-container h2 {
+        display: block;
+        text-align: initial;
+        font-size: 2.2em;
+    }
+
+    .logo-container img {
+        height: 100%;
+    }
+
+
+    .buttons-container {
+        justify-content:flex-start;
+        flex-direction: row;
+    }
+
+    .buttons-container a {
+        font-size: 2.4rem;
+    }
+
+    .total-connections {
+        align-items:flex-end;
+    }
+
+    .bottom-container {
+        flex-direction: row;
+    }
+
+    .profile-exit-bar {
+        padding-bottom: 3.2rem;
+    }
+
+    .connection-button-container {
+        display:flex;
+        flex-direction: row-reverse
+    }
+}
